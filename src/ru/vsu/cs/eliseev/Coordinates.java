@@ -12,6 +12,10 @@ public class Coordinates {
         return new Coordinates(x + dir.x, y + dir.y);
     }
 
+    Coordinates move(Direction dir, double k){
+        return new Coordinates((int) (x + dir.x * k), (int) (y + dir.y * k));
+    }
+
     @Override
     public String toString() {
         return "Coordinates{" +

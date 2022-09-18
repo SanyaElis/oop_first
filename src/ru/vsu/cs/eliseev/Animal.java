@@ -1,7 +1,7 @@
 package ru.vsu.cs.eliseev;
 
 abstract class Animal {//класс для наследования (Abstract) экземпляры данного класса не создаются
-    Coordinates position;
+    protected Coordinates position;
 
 
     public Animal(Coordinates position) {
